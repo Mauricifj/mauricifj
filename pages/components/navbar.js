@@ -51,7 +51,7 @@ export default function Navbar() {
                 </li>
                 <li className={styles.nav_item}>
                     <a id="themeButton" onClick={themeChange} href="#" className={styles.nav_link}>
-                        <i className="fas fa-moon"></i>
+                        <i className={darkMode ? 'fas fa-moon' : 'fas fa-sun'}></i>
                         <span className={styles.link_text}>Theme</span>
                     </a>
                 </li>

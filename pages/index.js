@@ -1,5 +1,24 @@
-function Index() {
-    return <h1>In progress...</h1>;
-}
+import Meta from "./components/meta";
+import Navbar from "./components/navbar";
 
-export default Index;
+import styles from '../styles/Home.module.css'
+
+export default function Home() {
+    return (
+        <div className={styles.container}>
+            <Meta />
+
+            <Navbar />
+
+            <main className={styles.content}>
+                <div className={styles.profile_picture_container}>
+                    <img className={styles.profile_picture} src="profile.jpg" />
+                </div>
+                <div className={styles.profile_description}>
+                    <h1 className={styles.profile_description_headline}>Hi, I'm Maurici</h1>
+                    <p className={styles.profile_description_}>Web and mobile developer</p>
+                </div>
+            </main>
+        </div>
+    );
+}

@@ -1,7 +1,6 @@
 import styles from '../../styles/Card.module.css'
 
 export default function Card({logo, title, subtitle, contents, footer, link = "#"}) {
-    console.log(contents)
     return (
         <div className={styles.card}>
             
@@ -19,7 +18,7 @@ export default function Card({logo, title, subtitle, contents, footer, link = "#
             
             <div className={styles.card_body}>
                 <h3 className={styles.card_subtitle}>{subtitle}</h3>
-                {contents.map(content => {
+                {contents?.map(content => {
                     return (
                         <div>
                             <h4>{content.header}</h4>

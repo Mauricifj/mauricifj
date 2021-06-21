@@ -8,9 +8,4 @@
     justify-content: center;
     height: 100vh;
     scroll-snap-align: start;
-    border: 1px solid red;
-}
-
-.content {
-    
 }

@@ -28,7 +28,7 @@ export default function Navbar() {
                 <li className={styles.nav_item}>
                     <Link href="/portfolio">
                         <a className={styles.nav_link}>
-                            <i className="fas fa-book-open"></i>
+                            <i className="fas fa-journal-whills"></i>
                             <span className={styles.link_text}>Portfolio</span>
                         </a>
                     </Link>
@@ -36,7 +36,7 @@ export default function Navbar() {
                 <li className={styles.nav_item}>
                     <Link href="/education">
                         <a className={styles.nav_link}>
-                            <i className="fas fa-graduation-cap"></i>
+                            <i className="fas fa-jedi"></i>
                             <span className={styles.link_text}>Education</span>
                         </a>
                     </Link>
@@ -68,8 +68,12 @@ const themeChange = () => {
     if(darkMode) {
         root.style.setProperty('--text-primary', '#23232e');
         root.style.setProperty('--text-secondary', '#141418');
-        root.style.setProperty('--bg-primary', '#b6b6b6');
-        root.style.setProperty('--bg-secondary', '#ececec');
+        root.style.setProperty('--bg-primary', '#FFFFFF');
+        root.style.setProperty('--bg-secondary', '#DDDDDD');
+        root.style.setProperty('--shadow', 'rgba(0, 0, 0, 0.3)');
+        root.style.setProperty('--shadow-hover', 'rgba(0, 0, 0, 0.75)');
+        root.style.setProperty('--navbar-bg-primary', '#b6b6b6');
+        root.style.setProperty('--navbar-bg-secondary', '#ececec');
         root.style.setProperty('--opacity', '1');
 
         icon.classList.remove("fa-moon");
@@ -77,8 +81,12 @@ const themeChange = () => {
     } else {
         root.style.setProperty('--text-primary', '#b6b6b6');
         root.style.setProperty('--text-secondary', '#ececec');
-        root.style.setProperty('--bg-primary', '#23232e');
-        root.style.setProperty('--bg-secondary', '#141418');
+        root.style.setProperty('--bg-primary', '#000000');
+        root.style.setProperty('--bg-secondary', '#333333');
+        root.style.setProperty('--shadow', 'rgba(200, 200, 200, 0.3)');
+        root.style.setProperty('--shadow-hover', 'rgba(200, 200, 200, 0.75)');
+        root.style.setProperty('--navbar-bg-primary', '#23232e');
+        root.style.setProperty('--navbar-bg-secondary', '#141418');
         root.style.setProperty('--opacity', '0.5');
 
         icon.classList.remove("fa-sun");

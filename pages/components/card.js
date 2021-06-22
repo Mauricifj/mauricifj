@@ -22,7 +22,7 @@ export default function Card({logo, title, subtitle, contents, footer, link = "#
                     return (
                         <div>
                             <h4>{content.header}</h4>
-                            {content.lines.map(line => line.li ? <li>{line.item}</li> : <p>{line}</p>)}
+                            {content.lines.map(line => renderLine(line))}
                         </div>
                     )
                 })}
@@ -33,4 +33,14 @@ export default function Card({logo, title, subtitle, contents, footer, link = "#
             </div>
         </div>
     );
+}
+
+function renderLine(line) {
+    if (line.li)
+        return <li>{line.item}</li>;
+
+    if (line.information)
+        return <a class={styles.information_link} href={line.address} target="_blank">{line.text}</a>;
+        
+    return <p>{line}</p>;
 }

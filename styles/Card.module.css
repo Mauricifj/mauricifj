@@ -87,3 +87,7 @@
     text-decoration: underline;
     color: var(--text-secondary);
 }
+
+.information_link {
+    color: #3FA9F5;
+}

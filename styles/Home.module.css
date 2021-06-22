@@ -11,14 +11,25 @@
     justify-content: center;
 }
 
-.profile_picture_container {
-    margin: 3rem;
-    filter: drop-shadow(0px 0px 15px rgba(63, 169, 245, 0.5));
+.social_mediar_bar {
+    display: flex;
+    height: 3rem;
 }
 
-.profile_picture {
-    width: 25rem;
-    clip-path: ellipse(50% 45% at 50% 45%);
+.social_mediar_bar a {
+    margin: auto;
+    height: 3rem;
+}
+
+.social_mediar_bar svg {
+    height: 3rem;
+    width: 3rem !important;
+    transition: scale .2s ease-in-out;
+}
+
+.social_mediar_bar svg:hover {
+    transform: scale(1.1);
+    color: #3FA9F5;
 }
 
 @media only screen and (max-width: 600px) {
@@ -36,13 +47,5 @@
 
     .content p {
         font-size: 1rem;
-    }
-
-    .profile_picture_container {
-        margin: 1rem;
-    }
-
-    .profile_picture {
-        width: 5rem;
     }
 }

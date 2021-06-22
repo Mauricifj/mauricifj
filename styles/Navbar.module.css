@@ -54,6 +54,7 @@
 }
 
 .nav_link svg {
+    width: 2rem;
     min-width: 2rem;
     margin: 0 1.5rem;
     color: #3FA9F5;

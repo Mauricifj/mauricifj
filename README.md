@@ -1,16 +1,26 @@
-## Hi there 👋
+import 'mauricifj.dart';
 
-<!--
-**Mauricifj/mauricifj** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+class AboutMe extends Developer {
+  final String name = "Maurici";
+  final String field = "Mobile Engineer | Flutter Developer";
+  final String motto = "Write clean code and keep it simple.";
+  final String location = "My Mac and the Cloud ☁️";
 
-Here are some ideas to get you started:
+  void introduce() {
+    print("Hi, I'm $name — $field 👨‍💻");
+    print("📍 Based in: $location");
+    print("💬 Motto: $motto");
+  }
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class Skills extends Developer {
+  final List<String> languages = ["Dart", "JavaScript (when I must)"];
+  final List<String> frameworks = ["Flutter"];
+  final List<String> tools = ["Firebase", "Git", "Figma"];
+
+  void showSkills() {
+    print("🛠️ Languages: $languages");
+    print("🧱 Frameworks: $frameworks");
+    print("🔧 Tools: $tools");
+  }
+}
